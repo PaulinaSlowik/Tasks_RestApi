@@ -19,8 +19,6 @@ dependencies {
 	}
 	compileOnly('org.projectlombok:lombok')
 	annotationProcessor('org.projectlombok:lombok')
-	compile('org.springframework.boot:spring-bootostarter-data-jpa')
-	compile('mysql:mysql_connector-java')
 }
 
 test {
