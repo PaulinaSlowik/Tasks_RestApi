@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DbService {
@@ -16,7 +17,19 @@ public class DbService {
         return repository.findAll();
     }
 
-    public Task getTask (Long taskId){
-        return repository.getById(taskId);
+    public Task saveTask(final Task task) {
+        return repository.save(task);
+    }
+
+//    public Task getTask (Long taskId){
+//        return repository.getById(taskId);
+//    }
+
+//    public Task getTaskById (final Long id) {
+//        return repository.findById(id).orElse(null);
+//    }
+
+    public Optional<Task> getTask (final Long id) {
+        return repository.findById(id);
     }
 }
