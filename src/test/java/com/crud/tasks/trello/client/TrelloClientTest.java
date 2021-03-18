@@ -7,19 +7,12 @@ import com.crud.tasks.domain.TrelloCardDto;
 import com.crud.tasks.mapper.CreatedTrelloCard;
 import org.junit.Assert;
 import org.junit.Before;
-<<<<<<< HEAD
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-=======
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
->>>>>>> d0893ed8f6254893490b6604d5d4707a7c841ead
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
@@ -27,16 +20,10 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
-<<<<<<< HEAD
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-=======
-import static org.mockito.Mockito.when;
-
-@RunWith(MockitoJUnitRunner.class)
->>>>>>> d0893ed8f6254893490b6604d5d4707a7c841ead
 public class TrelloClientTest {
 
     @InjectMocks
